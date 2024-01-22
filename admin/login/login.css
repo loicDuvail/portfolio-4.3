@@ -1,0 +1,40 @@
+body{
+    width: 100dvw;
+    height: 95vh;
+    margin: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-container{
+    display: flex;
+}
+
+input{
+    min-width: 240px;
+    padding: 5px 10px;
+
+    font-size: 15px;
+    
+    outline: none;
+    border-radius:5px;
+    border: 1px solid black;
+}
+
+#eyeContainer{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.eye{
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+
+.visible{
+    display: block;
+}

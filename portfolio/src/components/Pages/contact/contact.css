@@ -1,0 +1,77 @@
+#contact-page{
+    width: 80%;
+    margin-left: 10%;
+    font-size: larger;
+    font-family: "Poppins";
+    display: inline-block;
+}
+
+#contact-page h2{
+    font-size: 40px;
+    line-height: 1em;
+    margin: 0;
+}
+
+#contact-page hr{
+    width: 100%;
+    margin: 25px;
+    margin-left: 0;
+}
+
+#contact-wrapper{
+    display: flex;
+}
+
+#contact-text{
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#contact-text p{
+    margin: 0;
+    margin-top: 20px;
+    font-family: "Poppins";
+}
+#contact-text em{
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+#clipboard-success-msg{
+    width: fit-content;
+    margin-top: 0;
+    padding: 20px 30px;
+    border-radius: 40px;
+    background-color: rgb(23, 23, 23);
+    font-size: 0.8em;
+    color: white;
+
+    opacity: 0;
+    transition: all 400ms ease-in-out;
+}
+#clipboard-success-msg.visible{
+    margin-top: 40px;
+    opacity: 1;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width:1000px) {
+    #contact-wrapper{
+        display: block;
+    }
+    #contact-text{
+        margin: 0;
+        margin-top: 20px;
+        text-wrap:balance;
+    }
+
+}
+
+@media screen  and (max-width:500px){
+    #contact-page h2{
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,31 @@
+footer{
+    width: 100%;
+    height: var(--footer_height);
+
+    background-color: var(--highlight_color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#copyright{
+    margin-left: 40px;
+    font-weight: 600;
+    color: var(--footer_font_color);
+}
+
+#footer-links{
+    margin-right: 30px;
+    margin-top: 5px;
+    width: 120px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link{
+    cursor: pointer;
+    color: var(--footer_font_color);
+}

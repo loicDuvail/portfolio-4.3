@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --dark-color: #181818;
+    --footer-height:70px;
+    --shadow-color:rgba(0, 0, 0, 0.189);
+}
+
+body{
+    margin: 0;
+    font-family: "Poppins";
+    background-image: url("./assets/marlies-dekkers.jpg");
+}
+
+nav{
+    box-sizing: border-box;
+    width: 100dvw;
+    height: var(--footer-height);               
+    padding: 0px 15px;
+
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--dark-color);
+}
+
+button{
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+
+    font-family: "Poppins";
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(152, 152, 152);
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: all 300ms ease-in-out;
+}
+
+button:hover{
+    box-shadow: 3px 3px 10px var(--shadow-color);
+}

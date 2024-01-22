@@ -1,0 +1,70 @@
+#email-form-container{
+    width: 45%;
+    display: flex;
+    flex-direction:column ;
+}
+
+#error-msg{
+    margin: 0;
+    padding:10px 5px ;
+    padding-top:0 ;
+    font-size: 16px;
+    color: red;
+}
+
+#email-form{
+    display: flex;
+    flex-direction:column ;
+}
+
+#email-form-top{
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+}
+#email-form-top input{
+    width: 50%;
+}
+
+input{
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: large;
+}
+
+textarea{
+    height: 100px;
+    margin: 5px;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: large;
+    resize: vertical;
+
+    border: 1px solid black;
+}
+#form-bottom{
+    display: flex;
+}
+#form-btn{
+    width: fit-content;
+    margin: 5px;
+    background-color: white;
+    border: 1px solid black;
+    padding:10px 60px;
+    cursor: pointer;
+
+    font-size: large;
+
+}
+
+@media screen and (max-width:1000px){
+    #email-form-container{
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    #form-btn{
+        width: calc(100% - 10px);
+    }
+
+}

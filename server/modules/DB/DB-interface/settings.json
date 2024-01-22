@@ -1,0 +1,11 @@
+{
+    "tables":[{
+        "name":"projects",
+        "routes":{
+            "get":"/api/get_projects",
+            "post":"/admin/post_projects",
+            "update":"/admin/update_projects",
+            "delete":"/admin/delete_projects"
+        }
+    }]  
+}

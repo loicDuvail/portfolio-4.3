@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --background_color:rgb(253, 253, 253);
+    --highlight_color:rgb(242, 227, 87);
+
+    --navbar_height:40px;
+    --navbar_margin_top:70px;
+    --navbar_margin_bottom:50px;
+    --navbar_total_height:calc(var(--navbar_height) + var(--navbar_margin_top) + var(--navbar_margin_bottom));
+    
+    --footer_height:70px;
+    --footer_font_color:rgb(54, 54, 54);
+}
+
+body{
+    margin:0;
+    background-color:var(--background_color);
+    font-family: 'Roboto';
+}
+
+#root{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    position: absolute;
+    overflow-x: hidden;
+}
+
+.page{
+    width: 100%;
+    min-height: calc(100vh - var(--navbar_total_height) - var(--footer_height));
+}
+
+em{
+    font-style: normal;
+    font-size: inherit;
+    isolation: isolate;
+    color:var(--highlight_color);
+}
+
+.unselectable{
+    user-select: none;
+}

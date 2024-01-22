@@ -1,0 +1,120 @@
+#project-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+}
+#project-content{
+    width: 60vw;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+#project-previs{
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    margin-top: calc( -1 * var(--navbar_total_height));
+
+    border-radius: 0 0 30px 30px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#header{
+    width: 100%;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header h2{
+    margin-left: 20px;
+    font-size: 40px;
+    line-height: 1em;
+    vertical-align: middle;
+}
+#arrow-back{
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    animation: oscilate 2500ms ease-in-out infinite;
+}
+@keyframes oscilate {
+    0%{
+        color: black;
+    }50%{
+        color: grey;
+    }
+}
+#project-content hr{
+    width: 100%;
+    margin: 0;
+}
+
+#project-text{
+    margin-top: 20px;
+    width: 100%;
+}
+#project-text section{
+    margin-bottom: 40px;
+}
+#project-text section p{
+    margin-left: 10px;
+}
+
+@media screen and (max-width:800px){
+    #project-content{
+        width:90%;
+        margin-top: var(--navbar_total_height);
+    }
+    #project-previs{
+        border-radius: 30px;
+    }
+}
+@media screen and (max-width:500px) {
+    #project-content{
+        margin-top: calc(var(--navbar_total_height) + 40px);
+    }
+}
+
+#project-links{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 20px;
+}
+@media screen and (max-width:500px) {
+    #projects-links{
+        justify-content: space-around;
+    }
+}
+
+#project-links button{
+    margin-left: 30px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: "Poppins";
+    font-size: 1.1em;
+    background-color: var(--background_color);
+    box-shadow: 3px 3px 10px rgba(119, 119, 119, 0.255);
+
+    cursor: pointer;
+    transition: box-shadow 200ms ease-in-out;
+}
+#project-links button:hover{
+    box-shadow: 3px 3px 10px rgba(119, 119, 119, 0.507);
+}
+#project-links button svg{
+   margin-right: 10px;
+}
